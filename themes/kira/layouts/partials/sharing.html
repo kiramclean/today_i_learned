@@ -1,0 +1,40 @@
+<div class="sharing">
+  <p class="share">Share</p>
+  <div class="nav-center">
+    <a class="nav-item"
+       href="//twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{ .Site.Params.twitterHandle }}"
+       title="Tweet this"
+       target="_blank">
+      <span class="fa fa-twitter fa-lg"></span>
+    </a>
+    <a class="nav-item"
+       href="//reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}"
+       title="Share on Reddit"
+       target="_blank">
+      <span class="fa fa-reddit-alien fa-lg" aria-hidden="true"></span>
+    </a>
+    <a class="nav-item"
+       href="//www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}"
+       title="Share on LinkedIn"
+       target="_blank">
+      <span class="fa fa-linkedin fa-lg" aria-hidden="true"></span>
+    </a>
+    <a class="nav-item"
+       href="//plus.google.com/share?url={{ .Permalink }}"
+       title="Share on Google+"
+       target="_blank">
+      <span class="fa fa-google-plus fa-lg" aria-hidden="true"></span>
+    </a>
+    <a class="nav-item"
+       href="//www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+       title="Share on Facebook"
+       target="_blank">
+      <span class="fa fa-facebook fa-lg" aria-hidden="true"></span>
+    </a>
+    <a class="nav-item"
+       href="mailto:?subject=Check out this post by {{ .Site.Params.author }}&body={{ .Permalink }}"
+       title="Share via Email">
+      <span class="fa fa-envelope fa-lg" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>

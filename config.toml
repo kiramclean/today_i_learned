@@ -1,0 +1,40 @@
+baseurl = "https://til.kiramclean.com"
+languageCode = "en"
+title = "Today I Learned"
+theme = "kira"
+copyright = "&copy; 2017 &bull; Made with<a href=\"https://github.com/kiramclean\" target=\"_blank\"> <i class=\"fa fa-heart\"></i> </a> in Montreal &bull; Follow on <a href=\"https://twitter.com/kiraemclean\" target=\"_blank\">Twitter</a>"
+googleAnalytics = "UA-57190325-6"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+description = "Things I learned"
+keywords = ["learning", "programming", "life"]
+author = "Kira McLean"
+twitterHandle = "kiraemclean"
+
+[params.highlight]
+style = "github"
+languages = ["ruby", "bash", "elixir", "elm", "javascript"]
+
+[[params.social]]
+url = "https://github.com/kiramclean"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://twitter.com/kiraemclean"
+fa_icon = "fa-twitter"
+
+[[params.social]]
+url = "https://linkedin.com/in/kiramclean"
+fa_icon = "fa-linkedin-square"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"
+
+[[params.socialshare]]
+url = "https://linkedin.com/in/kiramclean"
+fa_icon = "fa-linkedin-square"

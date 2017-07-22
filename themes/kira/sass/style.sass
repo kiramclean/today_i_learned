@@ -1,0 +1,143 @@
+@import "node_modules/bulma/sass/utilities/initial-variables"
+
+$turquoise: #00c6c6
+// $link: orange
+$family-sans-serif: "Calibre", "Microsoft YaHei", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+@import "node_modules/bulma/bulma"
+
+body.all
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+
+section.main
+  flex: 1
+
+  .title
+    text-align: center
+    letter-spacing: 0.5px
+
+.container
+  max-width: 48rem
+  margin: 0 auto
+
+.content
+  padding-top: 2rem
+  line-height: 1.6
+
+.meta
+  align-items: center
+  display: flex
+  justify-content: center
+  padding-bottom: 2rem
+
+.date
+  color: $grey-light
+  padding: 0 0.5rem
+
+.tags
+  padding: 0 0.5rem
+
+.sharing
+  display: flex
+  flex-direction: column
+  padding-top: 3rem
+  text-align: center
+
+.share
+  color: $grey-light
+  font-weight: bold
+  letter-spacing: 1px
+  padding-bottom: 0.5rem
+  text-transform: uppercase
+
+.prev-next
+  display: flex
+  justify-content: space-between
+  padding: 1rem
+  text-transform: uppercase
+
+.prev i
+  margin: 3px 8px 0 0
+
+.next i
+  margin: 3px 0 0 8px
+
+.media-content
+  .subtitle+.title
+    margin-bottom: 10px
+  .content
+    line-height: 1.5
+
+.hero .nav
+  box-shadow: none
+
+.nav .icon
+  margin-left: 10px
+
+.site-title
+  font-weight: bold
+
+.fa-heart
+  margin-top: 3px
+
+code
+  color: inherit
+  font-size: 90%
+
+article+article
+  margin-top: 80px
+
+.content
+  h1, h2, h3, h4, h5, h6
+    line-height: 1.8
+  h1+h2:not(:first-child),
+  h2+h3:not(:first-child),
+  h3+h4:not(:first-child),
+  h4+h5:not(:first-child),
+  h5+h6:not(:first-child)
+    margin-top: 20px
+  h1
+    font-size: 24px
+  h2
+    font-size: 22px
+  h3
+    font-size: 20px
+  h4
+    font-size: 18px
+  h5
+    font-size: 17px
+  h6
+    font-size: 16px
+  p,
+  ol,
+  ul,
+  pre,
+  table
+    &:not(:last-child)
+      margin-bottom: 1.5em
+  table
+    td,
+    th
+      border: 1px solid #d3d6db
+      padding: 8px 10px
+      vertical-align: top
+  & > code, p > code
+    font-size: 90%
+    padding: 2px 4px
+    margin: 0 2px
+    background-color: #f8f8f8
+    color: #42464c
+    border: none
+    border-radius: 2px
+
+  pre
+    code
+      font-size: 90%
+      padding: 1em
+      line-height: 1.5
+  li
+    pre,
+    table
+      margin-bottom: 1.5em

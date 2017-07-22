@@ -1,0 +1,20 @@
+{{ partial "header" . }}
+<body class="all">
+  {{ partial "nav" . }}
+  <section class="main section">
+    <div class="container">
+      {{ range sort .Paginator.Pages }}
+      <article>
+        <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
+        <div class="meta">
+          {{ if .Params.tags }}
+            {{ partial "tags" .Params.tags }}
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ partial "pager" . }}
+</body>
+{{ partial "footer" . }}

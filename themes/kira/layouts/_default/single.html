@@ -1,0 +1,22 @@
+{{ partial "header" . }}
+<body class="all">
+{{ partial "nav" . }}
+<section class="main section">
+  <div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="meta">
+      {{ if .Params.tags }}
+        {{ partial "tags" .Params.tags }}
+        &bull;
+      {{ end }}
+      <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+    </div>
+    <div class="content">
+      {{ .Content }}
+    </div>
+    {{ partial "sharing.html" . }}
+    {{ partial "prev-next.html" . }}
+  </div>
+</section>
+{{ partial "footer" . }}
+</body>

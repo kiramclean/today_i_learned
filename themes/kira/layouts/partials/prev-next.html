@@ -1,0 +1,14 @@
+<div class="prev-next">
+  {{ if .NextInSection }}
+  <a href="{{.NextInSection.Permalink}}" class="button is-primary is-inverted prev">
+    <i class="fa fa-chevron-left"></i>
+    Previous
+  </a>
+  {{ end }}
+  {{ if .PrevInSection }}
+  <a href="{{.PrevInSection.Permalink}}" class="button is-primary is-inverted next">
+    Next
+    <i class="fa fa-chevron-right"></i>
+  </a>
+  {{ end }}
+</div>
