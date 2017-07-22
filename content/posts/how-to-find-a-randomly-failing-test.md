@@ -19,16 +19,17 @@ It's a utility included with rspec that automates the process of finding the min
 
 You use it by adding `--bisect` to the end of a command you know will produce a failing spec, like:
 
-```bash
+```nothing
 rspec spec/controllers --seed 1234 --bisect
 ```
 
 It will give you some weird output like:
 
-```bash
-The minimum command to reproduce is 
+```nothing
+Bisect complete! Reduced necessary non-failing examples from 1234 to 0 in 33.98 seconds.
 
-rspec spec 'some_thing_spec.rb[1:1:2]', 'another_bad_spec.rb[1:2:1:1]'
+The minimal reproduction command is:
+  rspec './spec/controllers/some_thing_spec.rb[1:1:2]' './spec/controllers/another_bad_spec.rb[1:2:1:1]'
 ```
 
-Use RSpec bisect to find the culprit. Watch {{% target_blank "this video about rspec bisect" "https://thoughtbot.com/upcase/videos/rspec-bisect" %}} by Thoughtbot to learn how to use it.
+Watch {{% target_blank "this video about rspec bisect" "https://thoughtbot.com/upcase/videos/rspec-bisect" %}} by Thoughtbot to learn more.
