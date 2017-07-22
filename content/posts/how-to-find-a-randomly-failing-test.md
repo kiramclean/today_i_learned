@@ -11,8 +11,14 @@ You develop your feature, running tests along the way and everything's working f
 
 You have some tests that only fail when run in a certain order.
 
-## The Solution: RSpec bisect
+## The Solution: {{% target_blank "RSpec Bisect" "https://relishapp.com/rspec/rspec-core/docs/command-line/bisect" %}}
 
-**Rspec bisect**.
+It's a utility included with rspec that automates the process of finding the minimum command to reproduce the test failure, so you can debug and fix it without running a ton of slow tests every time.
+
+You use it by adding `--bisect` to the end of a command you know will produce a failing spec, like:
+
+```
+rspec spec/controllers --seed 1234 --bisect
+```
 
 Use RSpec bisect to find the culprit. Watch {{% target_blank "this video about rspec bisect" "https://thoughtbot.com/upcase/videos/rspec-bisect" %}} by Thoughtbot to learn how to use it.

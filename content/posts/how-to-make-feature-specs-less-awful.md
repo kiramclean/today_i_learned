@@ -9,7 +9,7 @@ Feature specs are the worst. Rails devs are nodding. This is a post I wish I had
 
 ## The Problem
 
-The fundamental problem is that capybara boots your actual app in a separate process then runs the test instructions against that app to test interactions with it. 
+The fundamental problem is that capybara boots your actual app in a separate process then runs the test instructions against that app to test interactions with it.
 
 As the test instructions go on your Rails app can be doing whatever it wants, so you get a dumpster fire of race conditions where your spec is expecting something to happen or be there but your app is still working on making that thing happen while the test moves on.
 
