@@ -1,18 +1,14 @@
-<section class="section">
-  <nav class="nav">
-    <div class="nav-left">
-      <a class="nav-item" href="{{ .Site.BaseURL }}"><h1 class="title site-title">{{ .Site.Title }}</h1></a>
-    </div>
-    <div class="nav-right">
-      <nav class="nav-item is-mobile">
-        {{ range .Site.Params.social }}
-        <a href="{{ .url }}" target="_blank">
-          <span class="icon">
-            <i class="fa {{ .fa_icon }}"></i>
-          </span>
-        </a>
-        {{ end }}
-      </nav>
-    </div>
-  </nav>
-</section>
+<nav class="navbar main-nav">
+  <div class="navbar-start">
+    <a class="navbar-item" href="{{ .Site.BaseURL }}"><h1 class="title site-title">{{ .Site.Title }}</h1></a>
+  </div>
+  <div class="navbar-end navbar-item social">
+    {{ range .Site.Params.social }}
+    <a href="{{ .url }}" target="_blank">
+      <span class="icon">
+        <i class="fa {{ .fa_icon }}"></i>
+      </span>
+    </a>
+    {{ end }}
+  </div>
+</nav>

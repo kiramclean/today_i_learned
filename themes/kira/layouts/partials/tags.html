@@ -1,4 +1,4 @@
-<div class="tags is-6">
+<div class="tags">
   {{ range . }}
     <a class="tag button is-light" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
   {{ end }}
