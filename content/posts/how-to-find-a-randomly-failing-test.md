@@ -7,7 +7,7 @@ categories: ["programming", "ruby"]
 
 ## The Problem
 
-You develop your feature, running tests along the way and everything's working fine. You push right to CI without running the whole test suite (because it takes forever), then FAIL. But all the tests I ran were working! What gives? 
+You develop your feature, running tests along the way and everything's working fine. You push right to CI without running the whole test suite (because it takes forever), then FAIL. But all the tests I ran were working! What gives?
 
 You have some tests that only fail when run in a certain order.
 
@@ -29,7 +29,10 @@ It will give you some weird output like:
 Bisect complete! Reduced necessary non-failing examples from 1234 to 0 in 33.98 seconds.
 
 The minimal reproduction command is:
-  rspec './spec/controllers/some_thing_spec.rb[1:1:2]' './spec/controllers/another_bad_spec.rb[1:2:1:1]'
+  rspec './spec/controllers/some_thing_spec.rb[1:1:2]' './spec/controllers/
+  another_bad_spec.rb[1:2:1:1]'
 ```
+
+I don't know what those numbers at the end of the file name are, but RSpec does. This is the command you run to reliably reproduce the unreliable test failure and be on your way finding the problem.
 
 Watch {{% target_blank "this video about rspec bisect" "https://thoughtbot.com/upcase/videos/rspec-bisect" %}} by Thoughtbot to learn more.
