@@ -1,8 +1,8 @@
 ---
 title: "How to make feature specs less awful"
 date: 2017-07-20
-tags: [capybara, rails, rspec, testing]
-categories: [programming, ruby]
+tags: [capybara, rails, testing, ruby]
+categories: [programming, tools]
 ---
 
 Feature specs are the worst. Rails devs are nodding. This is a post I wish I had found before mebarking on my pursuit of a consistent legacy test suite that includes capybara feature specs.

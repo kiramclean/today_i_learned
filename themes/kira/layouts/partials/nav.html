@@ -1,8 +1,8 @@
 <nav class="navbar main-nav">
   <div class="navbar-start">
-    <a class="navbar-item site-title" href="/">
-      <h1 class="title">{{ .Site.Title }}</h1>
-    </a>
+    <h1 class="title site-title">
+      <a class="navbar-item" href="/">{{ .Site.Title }}</a>
+    </h1>
   </div>
   <div class="navbar-end navbar-item social">
     {{ range .Site.Params.social }}

@@ -1,8 +1,8 @@
 ---
 title: "How to find a randomly failing RSpec test"
 date: 2017-07-19
-tags: ["rails", "rspec", "testing"]
-categories: ["programming", "ruby"]
+tags: [rails, rspec, testing, ruby]
+categories: [programming, tools]
 ---
 
 ## The Problem
@@ -20,7 +20,7 @@ It's a utility included with rspec that automates the process of finding the min
 You use it by adding `--bisect` to the end of a command you know will produce a failing spec, like:
 
 ```nothing
-rspec spec/controllers --seed 1234 --bisect
+rspec spec/requests --seed 1234 --bisect
 ```
 
 It will give you some weird output like:
@@ -29,10 +29,10 @@ It will give you some weird output like:
 Bisect complete! Reduced necessary non-failing examples from 1234 to 0 in 33.98 seconds.
 
 The minimal reproduction command is:
-  rspec './spec/controllers/some_thing_spec.rb[1:1:2]' './spec/controllers/
+  rspec './spec/requests/some_thing_spec.rb[1:1:2]' './spec/requests/
   another_bad_spec.rb[1:2:1:1]'
 ```
 
-I don't know what those numbers at the end of the file name are, but RSpec does. This is the command you run to reliably reproduce the unreliable test failure and be on your way finding the problem.
+I don't know what those numbers at the end of the file names are, but RSpec does. This is the command you run to reliably reproduce the unreliable test failure and be on your way finding the problem.
 
 Watch {{% target_blank "this video about rspec bisect" "https://thoughtbot.com/upcase/videos/rspec-bisect" %}} by Thoughtbot to learn more.
