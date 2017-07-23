@@ -1,5 +1,4 @@
-baseurl = ""
-relativeurls = true
+baseurl = "https://til.kiramclean.com"
 languageCode = "en"
 title = "Today I Learned"
 theme = "kira"
