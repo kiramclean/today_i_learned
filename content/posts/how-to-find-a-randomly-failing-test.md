@@ -19,13 +19,13 @@ It's a utility included with rspec that automates the process of finding the min
 
 You use it by adding `--bisect` to the end of a command you know will produce a failing spec, like:
 
-```nothing
+```bash
 rspec spec/requests --seed 1234 --bisect
 ```
 
 It will give you some weird output like:
 
-```nothing
+```bash
 Bisect complete! Reduced necessary non-failing examples from 1234 to 0 in 33.98 seconds.
 
 The minimal reproduction command is:

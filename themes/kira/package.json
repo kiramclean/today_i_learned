@@ -2,9 +2,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^2.3.2"
-  },
-  "dependencies": {
+    "gulp-sass": "^2.3.2",
     "bulma": "^0.4.3"
   }
 }

@@ -1,6 +1,6 @@
 # My Theme
 
-This is a minimal blog theme for [hugo](http://gohugo.io). The theme is based on [Hemingway2](https://github.com/beli3ver/hemingway2.git).
+This is a minimal blog theme for [hugo](http://gohugo.io). The theme is loosely based on [Hemingway2](https://github.com/beli3ver/hemingway2.git).
 
 ## Features
 
@@ -22,7 +22,7 @@ baseurl = "https://example.com"
 languageCode = "en"
 title = "Hu | Core"
 theme = "Hucore"
-copyright = "&copy; 2017 | Follow on <a href=\"https://twitter.com/mgjohansen\" target=\"_blank\">Twitter</a> ♥"
+copyright = "&copy; 2017 | Follow on <a href=\"https://twitter.com/kiraemclean\" target=\"_blank\">Twitter</a> ♥"
 googleAnalytics = "trackingcode"
 
 [taxonomies]
@@ -34,10 +34,6 @@ description = "Your description here"
 keywords = ["keyword 1", "keyword 2", "keyword 3"]
 author = "Kira"
 sharingicons = true
-
-[params.highlight]
-style = "github"
-languages = ["go", "dockerfile"]
 
 [[params.social]]
 url = "https://github.com/mgjohansen"

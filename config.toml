@@ -4,6 +4,11 @@ title = "Today I Learned"
 theme = "kira"
 copyright = "&copy; 2017 &bull; Made with<a href=\"https://github.com/kiramclean\" target=\"_blank\"> <i class=\"fa fa-heart\"></i> </a> in Montreal"
 googleAnalytics = "UA-57190325-6"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+
+[blackFriday]
+  hrefTargetBlank = true
 
 [taxonomies]
 tag = "tags"
@@ -14,10 +19,6 @@ description = "Things I learned"
 keywords = ["learning", "programming", "life"]
 author = "Kira McLean"
 twitterHandle = "kiraemclean"
-
-[params.highlight]
-style = "monokai"
-languages = ["ruby", "bash", "elixir", "elm", "javascript"]
 
 [[params.social]]
 url = "https://github.com/kiramclean"
