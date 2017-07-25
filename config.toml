@@ -16,7 +16,7 @@ author = "Kira McLean"
 twitterHandle = "kiraemclean"
 
 [params.highlight]
-style = "github"
+style = "monokai"
 languages = ["ruby", "bash", "elixir", "elm", "javascript"]
 
 [[params.social]]
