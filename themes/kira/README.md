@@ -36,28 +36,21 @@ author = "Kira"
 sharingicons = true
 
 [[params.social]]
-url = "https://github.com/mgjohansen"
+url = "https://github.com/kiramclean"
 fa_icon = "fa-github"
 
 [[params.social]]
-url = "https://gitlab.com/mgjohansen"
-fa_icon = "fa-gitlab"
-
-[[params.social]]
-url = "https://twitter.com/mgjohansen"
+url = "https://twitter.com/kiraemclean"
 fa_icon = "fa-twitter"
 
 [[params.social]]
-url = "https://linkedin.com/in/mgjohansen"
+url = "https://linkedin.com/in/kiramclean"
 fa_icon = "fa-linkedin-square"
 
 [[params.social]]
 url = "/index.xml"
 fa_icon = "fa-rss"
 
-[[params.socialshare]]
-url = "https://linkedin.com/in/mgjohansen"
-fa_icon = "fa-linkedin-square"
 ```
 
 ## Build

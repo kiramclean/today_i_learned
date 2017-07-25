@@ -38,6 +38,6 @@ paginate = 10
   url = "/index.xml"
   fa_icon = "fa-rss"
 
-[[params.socialshare]]
-  url = "https://linkedin.com/in/kiramclean"
-  fa_icon = "fa-linkedin-square"
+[[params.social]]
+  url = "https://kiramclean.com"
+  fa_icon = "fa-globe"
