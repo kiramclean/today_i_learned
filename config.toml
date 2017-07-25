@@ -6,36 +6,38 @@ copyright = "&copy; 2017 &bull; Made with<a href=\"https://github.com/kiramclean
 googleAnalytics = "UA-57190325-6"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
+metaDataFormat = "toml"
+paginate = 10
 
 [blackFriday]
   hrefTargetBlank = true
 
 [taxonomies]
-tag = "tags"
-category = "categories"
+  tag = "tags"
+  category = "categories"
 
 [params]
-description = "Things I learned"
-keywords = ["learning", "programming", "life"]
-author = "Kira McLean"
-twitterHandle = "kiraemclean"
+  description = "Things I learned"
+  keywords = ["learning", "programming", "life"]
+  author = "Kira McLean"
+  twitterHandle = "kiraemclean"
 
 [[params.social]]
-url = "https://github.com/kiramclean"
-fa_icon = "fa-github"
+  url = "https://github.com/kiramclean"
+  fa_icon = "fa-github"
 
 [[params.social]]
-url = "https://twitter.com/kiraemclean"
-fa_icon = "fa-twitter"
+  url = "https://twitter.com/kiraemclean"
+  fa_icon = "fa-twitter"
 
 [[params.social]]
-url = "https://linkedin.com/in/kiramclean"
-fa_icon = "fa-linkedin-square"
+  url = "https://linkedin.com/in/kiramclean"
+  fa_icon = "fa-linkedin-square"
 
 [[params.social]]
-url = "/index.xml"
-fa_icon = "fa-rss"
+  url = "/index.xml"
+  fa_icon = "fa-rss"
 
 [[params.socialshare]]
-url = "https://linkedin.com/in/kiramclean"
-fa_icon = "fa-linkedin-square"
+  url = "https://linkedin.com/in/kiramclean"
+  fa_icon = "fa-linkedin-square"

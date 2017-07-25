@@ -1,9 +1,9 @@
----
-title: "How To Make Iex Remember What You Wrote"
-date: 2017-07-21
-tags: [elixir, iex, console]
-categories: [programming, tools]
----
++++
+title = "How to make Iex remember what you wrote"
+date = 2017-07-21
+tags = ["elixir", "iex", "console"]
+categories = ["programming", "tools"]
++++
 
 You might be in the habit of just pressing `up` to get previous things you wrote in a console. If you're used to ruby, this works in a rails console or `irb` session, too.
 

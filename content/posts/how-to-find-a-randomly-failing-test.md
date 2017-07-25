@@ -1,9 +1,9 @@
----
-title: "How to find a randomly failing RSpec test"
-date: 2017-07-19
-tags: [rails, rspec, testing, ruby]
-categories: [programming, tools]
----
++++
+title = "How to find a randomly failing RSpec test"
+date = 2017-07-19
+tags = ["rails", "rspec", "testing", "ruby"]
+categories = ["programming", "tools"]
++++
 
 ## The Problem
 
@@ -13,7 +13,7 @@ You have some tests that only fail when run in a certain order.
 
 ## The Solution
 
-### {{% target_blank "RSpec Bisect" "https://relishapp.com/rspec/rspec-core/docs/command-line/bisect" %}}
+### [RSpec Bisect](https://relishapp.com/rspec/rspec-core/docs/command-line/bisect)
 
 It's a utility included with rspec that automates the process of finding the minimum command to reproduce the test failure, so you can debug and fix it without running a ton of slow tests every time.
 
@@ -35,4 +35,4 @@ The minimal reproduction command is:
 
 I don't know what those numbers at the end of the file names are, but RSpec does. This is the command you run to reliably reproduce the unreliable test failure and be on your way finding the problem.
 
-Watch {{% target_blank "this video about rspec bisect" "https://thoughtbot.com/upcase/videos/rspec-bisect" %}} by Thoughtbot to learn more.
+Watch [this video about rspec bisect](https://thoughtbot.com/upcase/videos/rspec-bisect) by Thoughtbot to learn more.

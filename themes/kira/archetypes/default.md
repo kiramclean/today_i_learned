@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "{{ .TranslationBaseName | humanize }}"
 date: {{ .Date }}
 tags: []
 categories: [programming]

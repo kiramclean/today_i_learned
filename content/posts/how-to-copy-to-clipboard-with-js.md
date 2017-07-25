@@ -1,9 +1,9 @@
----
-title: "How To Copy Something To The Clipboard With Javascript"
-date: 2017-07-24
-tags: [javascript]
-categories: [programming, front-end]
----
++++
+title = "How to copy to clipboard with JS"
+date = 2017-07-24
+tags = ["javascript"]
+categories = ["programming", "front-end"]
++++
 
 ## The Requirement
 
@@ -26,6 +26,6 @@ export function copyToClipboard(val) {
 }
 ```
 
-There are limitations to this simple snippet so if click-to-copy is a key part of your app {{% target_blank "look at clipboard.js" "https://clipboardjs.com/" %}}, but if this is just a little nice-to-have extra thing this might be all you need.
+There are limitations to this simple snippet so if click-to-copy is a key part of your app [look at clipboard.js](https://clipboardjs.com/), but if it's just a little nice-to-have extra thing or if you're already working with lots of libraries that make importing certain third-party packages difficult, this might be all you need.
 
 Fewer libraries = less code = less maintenance, amiright?
