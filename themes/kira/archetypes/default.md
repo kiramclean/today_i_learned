@@ -1,6 +1,6 @@
----
-title: "{{ .TranslationBaseName | humanize }}"
-date: {{ .Date }}
-tags: []
-categories: [programming]
----
++++
+title = "{{ .TranslationBaseName | humanize }}"
+date = {{ .Date }}
+tags = []
+categories = ["programming"]
++++
