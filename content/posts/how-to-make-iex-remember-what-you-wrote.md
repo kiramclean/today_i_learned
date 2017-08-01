@@ -1,7 +1,7 @@
 +++
 title = "How to make Iex remember what you wrote"
 date = 2017-07-21
-tags = ["elixir", "iex", "console"]
+tags = ["elixir", "iex"]
 categories = ["programming", "tools"]
 +++
 
